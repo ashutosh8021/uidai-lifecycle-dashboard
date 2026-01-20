@@ -408,7 +408,65 @@ To deploy your own instance:
 
 ---
 
-## 📁 Project Structure
+## � Jupyter Notebooks & Analysis
+
+Comprehensive Colab notebooks for data exploration, preprocessing, and advanced analytics:
+
+### Available Notebooks:
+
+1. **[01 - Exploration & Cleaning](notebook/01_exploration_cleaning.ipynb)**
+   - Initial data loading and profiling
+   - Missing value analysis and handling
+   - Data quality assessment
+   - State name normalization
+
+2. **[02 - Enrolment Analysis](notebook/02_enrolment_analysis.ipynb)**
+   - Enrolment trends by state and time
+   - Seasonal pattern detection
+   - Growth rate calculations
+   - State-wise comparisons
+
+3. **[03 - Update Analysis](notebook/03_update_analysis.ipynb)**
+   - Demographic vs Biometric update ratios
+   - DUI and BUBI computation
+   - Update burden analysis
+   - Pressure classification
+
+4. **[04 - Cross Insights](notebook/04_cross_insights.ipynb)**
+   - Correlation analysis between metrics
+   - State clustering by lifecycle patterns
+   - National benchmarking
+   - Anomaly detection
+
+5. **[05 - ML Clustering](notebook/05_ml_clustering.ipynb)**
+   - K-means clustering of states
+   - Unsupervised pattern identification
+   - State archetype classification
+   - Feature importance analysis
+
+### Run Notebooks Locally:
+
+```bash
+# Install Jupyter
+pip install jupyter
+
+# Start Jupyter server
+jupyter notebook notebook/
+
+# Or run individual notebook
+jupyter notebook notebook/01_exploration_cleaning.ipynb
+```
+
+### Run in Google Colab:
+
+1. Open [Google Colab](https://colab.research.google.com/)
+2. Click "File → Open notebook → GitHub"
+3. Enter: `ashutosh8021/uidai-lifecycle-dashboard`
+4. Select desired notebook
+
+---
+
+## �📁 Project Structure
 
 ```
 uidai-lifecycle-dashboard/
@@ -419,6 +477,12 @@ uidai-lifecycle-dashboard/
 ├── .gitignore                      # Git ignore rules
 ├── .streamlit/
 │   └── config.toml                 # Streamlit configuration
+├── notebook/                       # Jupyter notebooks
+│   ├── 01_exploration_cleaning.ipynb
+│   ├── 02_enrolment_analysis.ipynb
+│   ├── 03_update_analysis.ipynb
+│   ├── 04_cross_insights.ipynb
+│   └── 05_ml_clustering.ipynb
 ├── pictures/                       # Dashboard screenshots
 │   ├── national_enrolment_trend.png
 │   ├── dui_vs_bubi_scatter.png
