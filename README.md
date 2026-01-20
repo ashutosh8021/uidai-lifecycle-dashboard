@@ -2,6 +2,8 @@
 
 A Streamlit-powered interactive dashboard for exploring Aadhaar lifecycle metrics (DUI & BUBI) by state, built for the UIDAI Data Hackathon 2026.
 
+![National Enrolment Trend](pictures/national_enrolment_trend.png)
+
 ## 🎯 Features
 
 - **State-level Analytics**: Filter and analyze data by state with date range controls
@@ -57,7 +59,33 @@ streamlit run app.py
 
 The dashboard will open in your browser at `http://localhost:8501`
 
-## 📊 Metrics Explained
+## � Dashboard Preview
+
+### State-Level Analytics
+Analyze Aadhaar lifecycle metrics for any state with interactive filters and date range selection.
+
+![DUI vs BUBI Scatter](pictures/dui_vs_bubi_scatter.png)
+
+### National Comparison
+Compare lifecycle pressure across all states using interactive scatter plots.
+
+![Lifecycle Pressure Scatter](pictures/lifecycle_pressure_scatter.png)
+
+### Top 10 States by Metrics
+
+**Top States by Enrolment:**
+![Top 10 States Enrolment](pictures/top10_states_enrolment.png)
+
+**Top States by DUI:**
+![Top 10 States DUI](pictures/top10_states_dui.png)
+
+**Top States by BUBI:**
+![Top 10 States BUBI](pictures/top10_states_bubi.png)
+
+### Age-wise Trends
+![Age-wise Enrolment Trend](pictures/agewise_enrolment_trend.png)
+
+## �📊 Metrics Explained
 
 ### DUI (Demographic Update Intensity)
 ```
